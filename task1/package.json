@@ -1,0 +1,20 @@
+{
+    "name": "dreamboard",
+    "version": "1.0.0",
+    "description": "Wishlist App",
+    "main": "dist/index.js",
+    "source": "src/index.html",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build"
+    },
+    "keywords": [
+        "wishlist",
+        "dreamboard"
+    ],
+    "author": "Nikita Liapin",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "^2.12.0"
+    }
+}
