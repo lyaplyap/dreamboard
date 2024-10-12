@@ -11,3 +11,6 @@
 ├── ???
 └── taskN - profit!
 ```
+## Полезные ссылки
+
+* [Макет приложения](https://www.behance.net/gallery/193146387/Dream-Board-Wishlist-mobile-app-UXUI-design)
