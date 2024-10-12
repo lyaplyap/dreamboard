@@ -6,7 +6,8 @@
 
 ```text
 .
-├── task1 - вёрстка по макетам из Figma
+├── task1 - верстаем по макетам из Figma
+├── task2 - подключаем javascript
 ├── ???
 └── taskN - profit!
 ```

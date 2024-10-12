@@ -1,0 +1,40 @@
+import { getPlusTemplate } from "../icons";
+
+const createCardComponent = ({ title, description, imageUrl, price }) => {
+    const component = document.createElement('div');
+
+    component.className = 'gift';
+    component.innerHTML = `
+        <div class="gift__main">
+            <img src="${imageUrl}" class="gift__picture" alt="">
+            <div class="gift__info">
+                <h2 class="gift__title">${title}</h2>
+                <div class="gift__description">${description}</div>
+            </div>
+        </div>
+        <div class="gift__footer">
+            <div class="gift__price">${price}</div>
+            <button class="button button--size_l button--color_sulu button--view_default">
+                ${getPlusTemplate('l')}
+            </button>
+        </div>
+    `;
+
+    return component;
+};
+
+export const renderGiftCards = (gifts) => {
+    const container = document.getElementById('gift-cards');
+
+    if (!container) {
+        throw new Error('#gift-cards not found');
+    }
+
+    for (const gift of gifts) {
+        const listItem = document.createElement('li');
+        const giftComponent = createCardComponent(gift);
+
+        listItem.appendChild(giftComponent);
+        container.appendChild(listItem);
+    }
+};

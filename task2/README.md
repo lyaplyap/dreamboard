@@ -1,0 +1,31 @@
+# dreamboard
+
+## Запуск в режиме разработки
+
+* Итоговая вёрстка находится в директории [src](./src/)
+
+* Для запуска проекта в dev-режиме:
+    
+    * Установите [Node.js](https://nodejs.org/ru)
+    
+    * Перейдите в директорию проекта
+    
+    * Вызовите в терминале следующие команды:
+        
+        ```bash
+        npm install
+        ```
+
+        ```bash
+        npm start
+        ```
+
+## Полезные ссылки
+
+* [Макет приложения](https://www.behance.net/gallery/193146387/Dream-Board-Wishlist-mobile-app-UXUI-design)
+
+* [Документация Parcel](https://parceljs.org/docs/)
+
+## Troubleshooting
+
+Если возникли проблемы при запуске команды `npm start`, попробуйте удалить директории `dist` и `.parcel-cache` и запустить команду заново

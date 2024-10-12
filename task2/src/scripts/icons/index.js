@@ -1,0 +1,12 @@
+export { getArrowRightTemplate } from './arrow-right';
+export { getCartTemplate } from './cart';
+export { getChevronLeftTemplate } from './chevron-left';
+export { getExternalLinkTemplate } from './external-link';
+export { getEyeTemplate } from './eye';
+export { getGiftTemplate } from './gift';
+export { getLogoutTemplate } from './logout';
+export { getMenuTemplate } from './menu';
+export { getPlusTemplate } from './plus';
+export { getSettingsTemplate } from './settings';
+export { getShareTemplate } from './share';
+export { getUsersTemplate } from './users';
