@@ -94,12 +94,6 @@ html, body {
     gap: 36px;
 }
 
-#wishlist-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 @media (max-width: 520px) {
     #main {
         padding-bottom: calc(24px + 124px);

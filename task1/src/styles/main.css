@@ -80,58 +80,13 @@ html, body {
 
 }
 
-.header {
-    height: 128px;
-    border-bottom: 2px solid var(--color-accent-biloba-flower-primary);
+#main {
     padding: 24px 32px;
     display: flex;
     justify-content: center;
 }
 
-.header > .header--mobile {
-    display: none;
-}
-
-.header > div {
-    width: 1280px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logotype > a {
-    all: unset;
-    cursor: pointer;
-    font-size: 36px;
-    line-height: 40px;
-    display: flex;
-    gap: 0;
-}
-
-.logotype span:first-child {
-    font-weight: 700;
-}
-
-.logotype span:last-child {
-    font-weight: 300;
-}
-
-.actions {
-    display: flex;
-    gap: 24px;
-}
-
-.actions--collapsed {
-    display: none;
-}
-
-.main {
-    padding: 24px 32px;
-    display: flex;
-    justify-content: center;
-}
-
-.main > div {
+#main > div {
     height: 100%;
     width: 1280px;
     display: flex;
@@ -139,103 +94,14 @@ html, body {
     gap: 36px;
 }
 
-.wishlist-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.gift-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-}
-
-.navigation--mobile {
-    height: 124px;
-    padding: 24px 16px 36px 16px;
-    background-color: var(--color-background-secondary);
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.navigation--mobile > ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-@media (max-width: 1080px) {
-    .actions--collapsed {
-        display: initial;
-    }
-
-    .actions--expanded {
-        display: none;
-    }
-
-    .gift-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 860px) {
-    .gift-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 521px) {
-    .navigation--mobile {
-        display: none;
-    }
-}
-
 @media (max-width: 520px) {
-    .header > .header--desktop {
-        display: none;
-    }
-
-    .header {
-        height: 112px;
-        width: 100%;
-        border-bottom: 2px solid var(--color-accent-biloba-flower-primary);
-        padding: 16px;
-    }
-    
-    .header > .header--mobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .logotype > a {
-        font-size: 32px;
-    }
-
-    .avatar {
-        cursor: pointer;
-    }
-
-    .avatar > img {
-        width: 48px;
-        height: 48px;
-        border-radius: 100;
-    }
-
-    .main {
+    #main {
         padding-bottom: calc(24px + 124px);
         display: flex;
         justify-content: center;
     }
 
-    .main > div {
+    #main > div {
         gap: 24px;
-    }
-
-    .gift-cards {
-        grid-template-columns: 1fr;
     }
 }
