@@ -1,0 +1,77 @@
+.wishlist {
+    border: none;
+    outline: none;
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-l);
+    line-height: var(--typography-primary-line-height-l);
+    cursor: pointer;
+}
+
+.wishlist .title {
+    white-space: nowrap;
+}
+
+.wishlist .count {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+/* Color */
+.wishlist--color_biloba-flower,
+.wishlist--color_biloba-flower.wishlist--type_card {
+    background-color: var(--color-accent-biloba-flower-primary);
+}
+
+.wishlist--color_sulu,
+.wishlist--color_sulu.wishlist--type_card {
+    background-color: var(--color-accent-sulu-primary);
+}
+
+.wishlist--color_classic-rose,
+.wishlist--color_classic-rose.wishlist--type_card {
+    background-color: var(--color-accent-classic-rose-primary);
+}
+
+/* View */
+.wishlist--view_default {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 30px;
+}
+
+.wishlist--view_compact {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 36px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 16px;
+}
+
+/* Type */
+.wishlist--color_biloba-flower.wishlist--type_action {
+    background-color: transparent;
+    color: var(--color-accent-biloba-flower-primary);
+    border: 2px dashed var(--color-accent-biloba-flower-primary);
+}
+
+.wishlist--color_sulu.wishlist--type_action {
+    background-color: transparent;
+    color: var(--color-accent-sulu-primary);
+    border: 2px dashed var(--color-accent-sulu-primary);
+}
+
+.wishlist--color_classic-rose.wishlist--type_action {
+    background-color: transparent;
+    color: var(--color-accent-classic-rose-primary);
+    border: 2px dashed var(--color-accent-classic-rose-primary);
+}
+
+.wishlist--view_compact.wishlist--type_action {
+    padding: 12px;
+}
