@@ -48,6 +48,7 @@
     --color-background-primary: #090909;
     --color-background-secondary: #464646;
     --color-background-inverse: #FFFFFF;
+    --color-background-transparent: rgba(9, 9, 9, 0.7);
 
     /* Typography */
     --typography-primary-family: 'Roc Grotesk', sans-serif;

@@ -1,7 +1,9 @@
 .gift {
+    height: 100%;
     border: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 48px;
     background-color: var(--color-background-inverse);
     border-radius: 20px;

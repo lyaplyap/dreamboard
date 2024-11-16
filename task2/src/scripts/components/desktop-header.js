@@ -1,6 +1,8 @@
 import { getGiftTemplate, getCartTemplate, getUsersTemplate, getMenuTemplate, getPlusTemplate } from '../icons';
 import { getNavigationActionView } from '../utils/navigation';
 
+import { openModal } from './modal';
+
 export const renderDesktopHeader = () => {
     const header = document.getElementById('header');
 
@@ -51,6 +53,12 @@ export const renderDesktopHeader = () => {
             </ul>
         </nav>
     `;
+
+    const addButton = component.querySelector('.desktop-navigation__action-add > button');
+
+    if (addButton) {
+        addButton.addEventListener('click', openModal);
+    }
 
     header.appendChild(component);
 };

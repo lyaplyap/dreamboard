@@ -43,39 +43,45 @@ export const BADGES = [
 
 export const GIFTS = [
     {
+        id: 'gift-0',
         title: 'Mirror Ball 8inch Cool and Fun Silver Disco Ball',
         description: 'Diameter 20cm/8inch (Don\'t included Motor and Lamps)',
         price: '$17.99',
-        imageUrl: discoballUrl
+        photo: discoballUrl
     },
     {
+        id: 'gift-1',
         title: 'Mirror Ball 8inch Cool and Fun Silver Disco Ball',
         description: 'Diameter 20cm/8inch (Don\'t included Motor and Lamps)',
         price: '$17.99',
-        imageUrl: discoballUrl
+        photo: discoballUrl
     },
     {
+        id: 'gift-2',
         title: 'Mirror Ball 8inch Cool and Fun Silver Disco Ball',
         description: 'Diameter 20cm/8inch (Don\'t included Motor and Lamps)',
         price: '$17.99',
-        imageUrl: discoballUrl
+        photo: discoballUrl
     },
     {
+        id: 'gift-3',
         title: 'Mirror Ball 8inch Cool and Fun Silver Disco Ball',
         description: 'Diameter 20cm/8inch (Don\'t included Motor and Lamps)',
         price: '$17.99',
-        imageUrl: discoballUrl
+        photo: discoballUrl
     },
     {
+        id: 'gift-4',
         title: 'Mirror Ball 8inch Cool and Fun Silver Disco Ball',
         description: 'Diameter 20cm/8inch (Don\'t included Motor and Lamps)',
         price: '$17.99',
-        imageUrl: discoballUrl
+        photo: discoballUrl
     },
     {
+        id: 'gift-5',
         title: 'Mirror Ball 8inch Cool and Fun Silver Disco Ball',
         description: 'Diameter 20cm/8inch (Don\'t included Motor and Lamps)',
         price: '$17.99',
-        imageUrl: discoballUrl
+        photo: discoballUrl
     }
 ];

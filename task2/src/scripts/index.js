@@ -3,9 +3,11 @@ import { renderGiftCards } from './components/gift-cards';
 import { renderMobileHeader } from './components/mobile-header';
 import { renderMobileNavigation } from './components/mobile-navigation';
 import { renderWishlistCards } from './components/wishlist-cards';
-import { BADGES, GIFTS } from './constants';
+import { renderModal } from './components/modal';
+import { BADGES } from './constants';
 import { isActivePage } from './utils/active-page';
 import { redirectToMainPage } from './utils/redirect';
+import { store } from './store';
 
 const renderApp = () => {
     renderDesktopHeader();
@@ -14,7 +16,8 @@ const renderApp = () => {
 
     if (isActivePage('dreams')) {
         renderWishlistCards(BADGES);
-        renderGiftCards(GIFTS);
+        renderGiftCards(store.getAll());
+        renderModal();
     }
 };
 
