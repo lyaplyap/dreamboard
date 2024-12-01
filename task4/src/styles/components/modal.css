@@ -1,0 +1,83 @@
+#modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--color-background-transparent);
+    display: none; /* default */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    background-color: var(--color-background-inverse);
+    padding: 24px 32px;
+    height: 100%;
+    max-height: 620px;
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-radius: 24px;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal__header button {
+    margin-right: -20px;
+}
+
+.modal__title {
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    color: var(--color-typography-light-primary);
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.modal__main {
+    padding: 8px 0;
+}
+
+.modal__main > form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.gift-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-m);
+    line-height: var(--typography-primary-line-height-m);
+}
+
+.gift-form__field input {
+    height: 32px;
+    font-family: var(--typography-primary-family);
+    font-size: var(--typography-primary-size-m);
+    line-height: var(--typography-primary-line-height-m);
+}
+
+#gift-form__preview {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: end;
+}
