@@ -13,7 +13,6 @@
     ],
     "author": "Nikita Liapin",
     "license": "ISC",
-    "homepage": "https://lyaplyap.github.io/dreamboard",
     "devDependencies": {
         "gh-pages": "^6.2.0",
         "parcel": "^2.12.0",
