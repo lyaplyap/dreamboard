@@ -6,7 +6,6 @@ import { renderWishlistCards } from './components/wishlist-cards';
 import { renderModal } from './components/modal';
 import { BADGES } from './constants';
 import { isActivePage } from './utils/active-page';
-import { redirectToMainPage } from './utils/redirect';
 import { store } from './store';
 
 const renderApp = async () => {
@@ -24,6 +23,5 @@ const renderApp = async () => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-    redirectToMainPage();
     renderApp();
 });
