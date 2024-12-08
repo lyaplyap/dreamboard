@@ -1,0 +1,283 @@
+/* Default */
+.button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: var(--color-accent-biloba-flower-primary);
+    color: var(--color-typography-dark-primary);
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-m);
+    line-height: var(--typography-primary-line-height-m);
+    border-radius: 12px;
+    min-height: 56px;
+    min-width: 56px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.button > .icon {
+    height: 16px;
+    width: 16px;
+}
+
+.button > .action {
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-m);
+    line-height: var(--typography-primary-line-height-m);
+}
+
+.button:hover {
+    background-color: var(--color-accent-biloba-flower-secondary);
+}
+
+.button:active {
+    background-color: var(--color-accent-biloba-flower-primary);
+}
+
+.button:disabled {
+    background-color: var(--color-accent-biloba-flower-tertiary);
+    color: var(--color-typography-dark-secondary);
+}
+
+/* Size */
+.button--size_m {
+    border-radius: 12px;
+    min-height: 56px;
+    min-width: 56px;
+}
+
+.button--size_m > .icon {
+    height: 16px;
+    width: 16px;
+}
+
+.button--size_m > .action {
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-m);
+    line-height: var(--typography-primary-line-height-m);
+}
+
+.button--size_l {
+    border-radius: 16px;
+    min-height: 64px;
+    min-width: 64px;
+}
+
+.button--size_l > .icon {
+    height: 24px;
+    width: 24px;
+}
+
+.button--size_l > .action {
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-l);
+    line-height: var(--typography-primary-line-height-l);
+}
+
+/* Biloba Flower, Default View */
+.button--color_biloba-flower,
+.button--color_biloba-flower.button--view_default {
+    background-color: var(--color-accent-biloba-flower-primary);
+    color: var(--color-typography-dark-primary);
+}
+
+.button--color_biloba-flower:hover,
+.button--color_biloba-flower.button--view_default:hover {
+    background-color: var(--color-accent-biloba-flower-secondary);
+    color: var(--color-typography-dark-primary);
+}
+
+.button--color_biloba-flower:active,
+.button--color_biloba-flower.button--view_default:active {
+    background-color: var(--color-accent-biloba-flower-primary);
+    color: var(--color-typography-dark-primary);
+}
+
+.button--color_biloba-flower:disabled,
+.button--color_biloba-flower.button--view_default:disabled {
+    background-color: var(--color-accent-biloba-flower-tertiary);
+    color: var(--color-typography-dark-secondary);
+}
+
+/* Biloba Flower, Pseudo View */
+.button--color_biloba-flower.button--view_pseudo {
+    background-color: transparent;
+    color: var(--color-accent-biloba-flower-primary);
+}
+
+.button--color_biloba-flower.button--view_pseudo:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-accent-biloba-flower-primary);
+}
+
+.button--color_biloba-flower.button--view_pseudo:active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--color-accent-biloba-flower-primary);
+}
+
+.button--color_biloba-flower.button--view_pseudo:disabled {
+    background-color: var(--color-accent-biloba-flower-tertiary);
+    color: var(--color-typography-dark-secondary);  
+}
+
+/* Biloba Flower, Clear View */
+.button--color_biloba-flower.button--view_clear {
+    background-color: transparent;
+    color: var(--color-typography-dark-secondary);  
+}
+
+.button--color_biloba-flower.button--view_clear:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-typography-dark-secondary);  
+}
+
+.button--color_biloba-flower.button--view_clear:active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--color-typography-dark-secondary);  
+}
+
+.button--color_biloba-flower.button--view_clear:disabled {
+    background-color: var(--color-accent-biloba-flower-tertiary);
+    color: var(--color-typography-dark-secondary);  
+}
+
+/* Sulu, Default View */
+.button--color_sulu,
+.button--color_sulu.button--view_default {
+    background-color: var(--color-accent-sulu-primary);
+    color: var(--color-typography-light-primary);
+}
+
+.button--color_sulu:hover,
+.button--color_sulu.button--view_default:hover {
+    background-color: var(--color-accent-sulu-secondary);
+    color: var(--color-typography-light-primary);
+}
+
+.button--color_sulu:active,
+.button--color_sulu.button--view_default:active {
+    background-color: var(--color-accent-sulu-primary);
+    color: var(--color-typography-light-primary);
+}
+
+.button--color_sulu:disabled,
+.button--color_sulu.button--view_default:disabled {
+    background-color: var(--color-accent-sulu-tertiary);
+    color: var(--color-typography-light-secondary);
+}
+
+/* Sulu, Pseudo View */
+.button--color_sulu.button--view_pseudo {
+    background-color: transparent;
+    color: var(--color-accent-sulu-primary);
+}
+
+.button--color_sulu.button--view_pseudo:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-accent-sulu-primary);
+}
+
+.button--color_sulu.button--view_pseudo:active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--color-accent-sulu-primary);
+}
+
+.button--color_sulu.button--view_pseudo:disabled {
+    background-color: var(--color-accent-sulu-tertiary);
+    color: var(--color-typography-light-secondary);
+}
+
+/* Sulu, Clear View */
+.button--color_sulu.button--view_clear {
+    background-color: transparent;
+    color: var(--color-typography-light-secondary);
+}
+
+.button--color_sulu.button--view_clear:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-typography-light-secondary);
+}
+
+.button--color_sulu.button--view_clear:active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--color-typography-light-secondary);
+}
+
+.button--color_sulu.button--view_clear:disabled {
+    background-color: var(--color-accent-sulu-tertiary);
+    color: var(--color-typography-light-secondary);
+}
+
+/* Classic Rose, Default View */
+.button--color_classic-rose,
+.button--color_classic-rose.button--view_default {
+    background-color: var(--color-accent-classic-rose-primary);
+    color: var(--color-typography-light-primary);
+}
+
+.button--color_classic-rose:hover,
+.button--color_classic-rose.button--view_default:hover {
+    background-color: var(--color-accent-classic-rose-secondary);
+    color: var(--color-typography-light-primary);
+}
+
+.button--color_classic-rose:active,
+.button--color_classic-rose.button--view_default:active {
+    background-color: var(--color-accent-classic-rose-primary);
+    color: var(--color-typography-light-primary);
+}
+
+.button--color_classic-rose:disabled,
+.button--color_classic-rose.button--view_default:disabled {
+    background-color: var(--color-accent-classic-rose-tertiary);
+    color: var(--color-typography-light-secondary);
+}
+
+/* Classic Rose, Pseudo View */
+.button--color_classic-rose.button--view_pseudo {
+    background-color: transparent;
+    color: var(--color-accent-classic-rose-primary);
+}
+
+.button--color_classic-rose.button--view_pseudo:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-accent-classic-rose-primary);
+}
+
+.button--color_classic-rose.button--view_pseudo:active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--color-accent-classic-rose-primary);
+}
+
+.button--color_classic-rose.button--view_pseudo:disabled {
+    background-color: var(--color-accent-classic-rose-tertiary);
+    color: var(--color-typography-light-secondary);
+}
+
+/* Classic Rose, Clear View */
+.button--color_classic-rose.button--view_clear {
+    background-color: transparent;
+    color: var(--color-typography-light-secondary);
+}
+
+.button--color_classic-rose.button--view_clear:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-typography-light-secondary);
+}
+
+.button--color_classic-rose.button--view_clear:active {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--color-typography-light-secondary);
+}
+
+.button--color_classic-rose.button--view_clear:disabled {
+    background-color: var(--color-accent-classic-rose-tertiary);
+    color: var(--color-typography-light-secondary);
+}

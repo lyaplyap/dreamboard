@@ -1,0 +1,15 @@
+.mobileNavigation {
+    height: 124px;
+    padding: 24px 16px 36px 16px;
+    background-color: var(--color-background-secondary);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.mobileNavigation > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}

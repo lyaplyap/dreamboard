@@ -1,0 +1,25 @@
+.main {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.main > div {
+    height: 100%;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+@media (max-width: 520px) {
+    .main {
+        padding-bottom: calc(24px + 124px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .main > div {
+        gap: 24px;
+    }
+}

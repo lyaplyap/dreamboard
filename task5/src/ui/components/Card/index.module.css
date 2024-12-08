@@ -1,0 +1,62 @@
+.card {
+    height: 100%;
+    border: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+    background-color: var(--color-background-inverse);
+    border-radius: 20px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.photo {
+    border-radius: 16px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-l);
+    line-height: var(--typography-primary-line-height-l);
+    color: var(--color-typography-light-primary);
+}
+
+.description {
+    font-family: var(--typography-secondary-family);
+    font-weight: var(--typography-secondary-weight);
+    font-size: var(--typography-secondary-size-s);
+    line-height: var(--typography-secondary-line-height-s);
+    color: var(--color-typography-light-secondary);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.price {
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-l);
+    line-height: var(--typography-primary-line-height-l);
+    color: var(--color-typography-light-primary);
+    font-size: 32px;
+}

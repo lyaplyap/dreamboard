@@ -1,0 +1,29 @@
+.badgeList {
+    flex-wrap: wrap;
+    gap: 8px;
+    display: flex;
+}
+
+.giftList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+@media (max-width: 1080px) {
+    .giftList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 860px) {
+    .giftList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .giftList {
+        grid-template-columns: 1fr;
+    }
+}

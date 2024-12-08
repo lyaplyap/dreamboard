@@ -1,0 +1,77 @@
+.badge {
+    border: none;
+    outline: none;
+    font-family: var(--typography-primary-family);
+    font-weight: var(--typography-primary-weight);
+    font-size: var(--typography-primary-size-l);
+    line-height: var(--typography-primary-line-height-l);
+    cursor: pointer;
+}
+
+.badge .title {
+    white-space: nowrap;
+}
+
+.badge .count {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+/* Color */
+.badge--color_biloba-flower,
+.badge--color_biloba-flower.badge--type_card {
+    background-color: var(--color-accent-biloba-flower-primary);
+}
+
+.badge--color_sulu,
+.badge--color_sulu.badge--type_card {
+    background-color: var(--color-accent-sulu-primary);
+}
+
+.badge--color_classic-rose,
+.badge--color_classic-rose.badge--type_card {
+    background-color: var(--color-accent-classic-rose-primary);
+}
+
+/* View */
+.badge--view_default {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 30px;
+}
+
+.badge--view_compact {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 36px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 16px;
+}
+
+/* Type */
+.badge--color_biloba-flower.badge--type_action {
+    background-color: transparent;
+    color: var(--color-accent-biloba-flower-primary);
+    border: 2px dashed var(--color-accent-biloba-flower-primary);
+}
+
+.badge--color_sulu.badge--type_action {
+    background-color: transparent;
+    color: var(--color-accent-sulu-primary);
+    border: 2px dashed var(--color-accent-sulu-primary);
+}
+
+.badge--color_classic-rose.badge--type_action {
+    background-color: transparent;
+    color: var(--color-accent-classic-rose-primary);
+    border: 2px dashed var(--color-accent-classic-rose-primary);
+}
+
+.badge--view_compact.badge--type_action {
+    padding: 12px;
+}
