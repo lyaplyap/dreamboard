@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Roc Grotesk';
+    font-weight: 300;
+    font-style: normal;
+    src: url('/src/assets/fonts/roc-grotesk-wide-light.otf') format('otf'),
+}
+
+@font-face {
+    font-family: 'Roc Grotesk';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/src/assets/fonts/roc-grotesk-wide.otf') format('otf'),
+}
+
+@font-face {
+    font-family: 'Roc Grotesk';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/src/assets/fonts/roc-grotesk-wide-medium.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Roc Grotesk';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/src/assets/fonts/roc-grotesk-wide-extrabold.otf') format('otf');
+}
+
+:root {
+    /* Colors */
+    --color-accent-biloba-flower-primary: #B49CFA;
+    --color-accent-biloba-flower-secondary: #C4B6FC;
+    --color-accent-biloba-flower-tertiary: #EDE9FE;
+    
+    --color-accent-sulu-primary: #B9FF66;
+    --color-accent-sulu-secondary: #D2FF95;
+    --color-accent-sulu-tertiary: #E9FFC7;
+    
+    --color-accent-classic-rose-primary: #FFC4DD;
+    --color-accent-classic-rose-secondary: #FEE5EF;
+    --color-accent-classic-rose-tertiary: #FEF1F6;
+
+    --color-typography-light-primary: #090909;
+    --color-typography-light-secondary: #A5A5A5;
+    --color-typography-dark-primary: #FFFFFF;
+    --color-typography-dark-secondary: #A5A5A5;
+
+    --color-background-primary: #090909;
+    --color-background-secondary: #464646;
+    --color-background-inverse: #FFFFFF;
+    --color-background-transparent: rgba(9, 9, 9, 0.7);
+
+    /* Typography */
+    --typography-primary-family: 'Roc Grotesk', sans-serif;
+    --typography-primary-weight: 500;
+
+    --typography-primary-size-s: 14px;
+    --typography-primary-size-m: 16px;
+    --typography-primary-size-l: 20px;
+    
+    --typography-primary-line-height-s: 18px;
+    --typography-primary-line-height-s: 24px;
+    --typography-primary-line-height-s: 24px;
+    
+    --typography-secondary-family: Inter, sans-serif;
+    --typography-secondary-weight: 400;
+    --typography-secondary-size-s: 12px;
+    --typography-secondary-line-height-s: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--color-background-primary);
+    color: var(--color-typography-dark-primary);
+    font-family: 'Roc Grotesk', Inter, sans-serif, monospace;
+    font-size: var(--font-size-text-m);
+    height: 100%;
+
+}
+
+#main {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: center;
+}
+
+#main > div {
+    height: 100%;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+@media (max-width: 520px) {
+    #main {
+        padding-bottom: calc(24px + 124px);
+        display: flex;
+        justify-content: center;
+    }
+
+    #main > div {
+        gap: 24px;
+    }
+}

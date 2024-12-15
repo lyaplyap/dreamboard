@@ -1,0 +1,20 @@
+{
+    "name": "dreamboard",
+    "version": "1.0.0",
+    "description": "Wishlist App",
+    "scripts": {
+        "start": "parcel ./src/pages/*.html",
+        "build": "parcel build ./src/pages/*.html --no-source-maps --public-url ./",
+        "deploy:pages": "rm -rf dist && npm run build && gh-pages -d dist"
+    },
+    "keywords": [
+        "wishlist",
+        "dreamboard"
+    ],
+    "author": "Nikita Liapin",
+    "license": "ISC",
+    "devDependencies": {
+        "gh-pages": "^6.2.0",
+        "parcel": "^2.12.0"
+    }
+}
